@@ -13,13 +13,13 @@ class BookList extends Component {
   render() {
     return (
       <ul className="list-group col-sm-4">
-        {this.renderList()}        
+        {this.renderList()}   
       </ul>
     );
   }
 }
 
-function mapStateTOProps(state) {
+function mapStateToProps(state) {
   console.log(state);
   //Whatever is returned will show up as props 
   //inside the BookList
@@ -28,4 +28,4 @@ function mapStateTOProps(state) {
   }
 }
 
-export default connect(mapStateTOProps)(BookList);
+export default connect(mapStateToProps)(BookList);
